@@ -2,6 +2,10 @@
 
 ## Overview of the analysis: Explain the purpose of this analysis.
 
+For this challenge I used imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling to identify credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. 
+
+Using six machine learning models and the credit card dataset from LendingClub, a peer-to-peer lending services company, I oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. Then, I used a combined approach of over- and undersampling using the SMOTEENN algorithm. I then compared two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. After evaluating the performance of these models in the conclusion, I made my recommendation on which one should be used to predict credit risk.
+
 ## Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 
 ### Naive Random Oversampling
@@ -36,3 +40,5 @@
 <img width="725" alt="EasyEnsemble_Report" src="https://user-images.githubusercontent.com/60076980/164896174-9714bc21-0a80-46b5-82b6-b2909411626b.png">
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+
