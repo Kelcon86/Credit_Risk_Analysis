@@ -5,7 +5,7 @@ For this challenge I used imbalanced-learn and scikit-learn libraries to build a
 
 Using six machine learning models and the credit card dataset from LendingClub, a peer-to-peer lending services company, I oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. Then, I used a combined approach of over- and undersampling using the SMOTEENN algorithm. I then compared two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. After evaluating the performance of these models in the conclusion, I made my recommendation on which one should be used to predict credit risk.
 
-## Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+## Results
 
 ### Naive Random Oversampling
 
@@ -47,7 +47,7 @@ Using six machine learning models and the credit card dataset from LendingClub, 
 - The precision score for low risk individuals was 100% with a recall score of 54%
 - The overall average precision score was 99% with a recall score of 54%
 
-### Balanced Random Forrest Classifier
+### Balanced Random Forest Classifier
 
 <img width="362" alt="BalancedAccuracyScore_BRFC" src="https://user-images.githubusercontent.com/60076980/164894911-5500be97-ebdb-40e0-8858-237a13666ab6.png">
 <img width="718" alt="BalancedRandomForest_Report" src="https://user-images.githubusercontent.com/60076980/164896128-910746b2-49cf-43dc-b673-8024e1d19983.png">
@@ -68,6 +68,6 @@ Using six machine learning models and the credit card dataset from LendingClub, 
 - The overall average precision score was 99% with a recall score of 94%
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
-
+The SMOTE model had the lowest balanced accuracy score at 52%. The Cluster Centroids and SMOTEENN models both had balanced accuracy scores of 62%, while the Naive Random Oversampling model was only slightly higher at 65%. Models 5 and 6 had the highest balanced accuracy scores at 79% for the Balanced Random Forest Classifier model and 93% for the Easy Ensemble AdaBoost Classifier.
 
 I recommend the Easy Ensemble AdaBoost Classifier for predicting credit risk for individuals. The model had an accuracy score of 93%, the highest of all six models I tested.
