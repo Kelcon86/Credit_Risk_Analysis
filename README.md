@@ -67,7 +67,7 @@ Using six machine learning models and the credit card dataset from LendingClub, 
 - The precision score for low risk individuals was 100% with a recall score of 94%
 - The overall average precision score was 99% with a recall score of 94%
 
-## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+## Summary
 The SMOTE model had the lowest balanced accuracy score at 52%. The Cluster Centroids and SMOTEENN models both had balanced accuracy scores of 62%, while the Naive Random Oversampling model was only slightly higher at 65%. Models 5 and 6 had the highest balanced accuracy scores at 79% for the Balanced Random Forest Classifier model and 93% for the Easy Ensemble AdaBoost Classifier.
 
 I recommend the Easy Ensemble AdaBoost Classifier for predicting credit risk for individuals. The model had an accuracy score of 93%, the highest of all six models I tested.
